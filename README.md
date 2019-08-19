@@ -23,28 +23,28 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Working with VeativeWebVR
 
-### How to setup Atom
+### How to set up Atom
 
-Install Atom : Download the file from https://atom.io/ and Install  AtomSetup-x64 in your pc.
+Install Atom : Download the file from https://atom.io/ and Install AtomSetup-x64 on your pc.
 
-Install html-preview package: To show Output on editor we will have to add html-preview package to Atom editor:
+Install html-preview package: To show Output in the editor we will have to add html-preview package to the Atom editor:
 
-Step 1. Open Atom editor.
+Step 1. Open Atom editor
 
-Step 2. Go to Packages Tab >> Setting View >> Install Packages/Themes
+Step 2. Go to the Packages Tab >> Setting View >> Install Packages/Themes
 
 Step 3. Search for atom-html-preview Package
 
-Step 4. Install first one from showing list.
+Step 4. Install the first one from the displayed list
 
-Step 5. After installation we can show output of web page
+Step 5. After installation, we can show the output of web pages
 
-Use html-preview package: To use html preview Go to Packages Tab >> Preview HTML >> Enable Preview. By enabling preview you can show the output of your project.
+Use html-preview package: To use the html preview, go to the Packages Tab >> Preview HTML >> Enable Preview. By enabling preview you can show the output of your project.
 
 
-### How to create new Project
+### How to create a new Project
 
-Step1: Create folder structure same as below
+Step1: Create the folder structure the same as below
 
 Module Id (Root Directory)
 
@@ -66,9 +66,9 @@ Module Id (Root Directory)
 
 ○Appdata.js
 
-Step2: Create index.html text file under the root directory, it will be Game Play page.
+Step2: Create an index.html text file under the root directory. It will be the Game Play page.
 
-Step3: Copy login.html, manifest.json, appdata.js file and loginform folder to your project
+Step3: Copy login.html, manifest.json, appdata.js file and loginform folders to your project.
 
 Step4: Open Atom editor and Select File tab then select Add Project Folder and select project directory.
 
@@ -79,12 +79,12 @@ Step1: Open Atom editor and Select File tab then select Add Project Folder and s
 
 Login page (login.html)
 
-If login cookie does not find in browser, Application shows Login form
+If the login cookie is not found by the browser, Application shows a Login form
   
-Fill below detail to the form
+Fill in all form details
 User name, user age , avatar and gender
 
-After submitting the form user will be redirected to module. User will login for 24 hour with login name.
+After submitting the form, the user will be redirected to the module. User will be logged in for 24 hours with that login name.
  
 
 ### Creating Game play (Using Index.html)
@@ -93,7 +93,7 @@ After submitting the form user will be redirected to module. User will login for
 ### Linking Manifest
 
 
-Linking manifest file to add below line
+Link the manifest file by adding the line below
 
 ```
 < link rel="manifest" href="manifest.json" >
@@ -102,7 +102,7 @@ Linking manifest file to add below line
 ### Add Module Title
 
 
-Add Title to page to add below line
+Add Title to the page by adding the line below
 
 ```
 <Title>MS300035</Title>
@@ -130,7 +130,7 @@ Load Script using `<script>` tag
 ### Create Scene
 
  
-Create Scene by adding a-scene Tag like below line
+Create Scene by adding the a-scene Tag, as shown below
 
 ```
 < a-scene renderer="antialias: true;">  code here    </a-scene> >
@@ -139,7 +139,7 @@ Create Scene by adding a-scene Tag like below line
 
 ### Add Camera
 
-Add following code:
+Add the following code:
 ```
 <a-scene renderer="antialias: true;">
 	<a-camera look-controls wasd-controls>
@@ -156,10 +156,10 @@ Add following code:
 
 ### Load sound in scene
 
-Write code to load sound inside a-scene Tag.
+Write code to load sound inside the a-scene Tag.
 Load sound with a-sound 
 
-Note: This is recommended if clip name is ‘click.wav’ then sound id sound be ‘s_click’ 
+Note: This is recommended if the clip name is ‘click.wav’ then the sound id sound be ‘s_click’ 
 (s_NameOfClip).
 
 ```
@@ -176,7 +176,7 @@ Note: This is recommended if clip name is ‘click.wav’ then sound id sound be
 Write code to load assets inside a-scene Tag.
 Load assets with a-sound 
 
-Note: This is recommended if loading file name is ‘dog.png’ then id should be ‘dog’ .
+Note: This is recommended if loading a file name such as ‘dog.png’, then the id should be ‘dog’ .
 
 ```
 <a-scene renderer="antialias: true;">
@@ -193,7 +193,7 @@ Note: This is recommended if loading file name is ‘dog.png’ then id should b
 
 Add Background music with a-sound tag in a-scene tag.
 
-Note: To disable autoplay change property autoplay="false"
+Note: To disable autoplay, change property autoplay="false"
 
 ```
 <a-scene renderer="antialias: true;">
@@ -203,9 +203,9 @@ Note: To disable autoplay change property autoplay="false"
 
 ### Add Skybox	
 
-Add Skybox in with a-sky tag inside a-scene tag.
+Add Skybox with a-sky tag inside a-scene tag.
 
-Note: Change rotation with rotation property.
+Note: Change rotation via rotation property.
 
 ```
 <a-scene renderer="antialias: true;">
@@ -216,7 +216,7 @@ Note: Change rotation with rotation property.
 ### Add Level
 
 Add level inside a-scene tag with a-entity tag.
-Note: To active/deactive level as default use property setactive="value:true/false"
+Note: To activate/deactivate the level as default, use property setactive="value:true/false"
 
 ```
 <a-scene renderer="antialias: true;">
@@ -267,8 +267,8 @@ Note: To active/deactive level as default use property setactive="value:true/fal
 
 ### Add Panel With OK Button
 
-Note: Method execute on ok click should name PanelIdName_click().
-Eg. if panel id is ‘p_comp_as’ method should be declared ‘p_comp_as_click()’
+Note: The method to execute on OK click is with name PanelIdName_click().
+Eg. If the panel id is ‘p_comp_as’, the method should be declared as ‘p_comp_as_click()’
 
 ```
 <a-entity id="p_comp_as" position="0 2 -3"
@@ -293,7 +293,7 @@ Eg. if panel id is ‘p_comp_as’ method should be declared ‘p_comp_as_click(
 
 Add panel inside <a-camera> tag.
 
-Note: Panel in camera should have scale ‘0.1’ for xyz.
+Note: The Panel in Camera should have the scale ‘0.1’ for xyz.
 
 ```
 <a-entity id="i_nextToProceed" 
@@ -324,7 +324,7 @@ id="oc" line="color: #00ffff; opacity: 0.75"></a-entity>
 
 ### Controller setting for different platforms (Cardboard,DayDream,GearVR and OculusGo)
 
-Add below code in index.html file at last
+Add the code below in the index.html file, at the end
 
 ```
 	<script>
